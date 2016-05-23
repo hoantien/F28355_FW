@@ -1,0 +1,82 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="D:\Master\Luan_Van\F28355_FW\test\"
+ProjectType=Executable
+CPUFamily=TMS320C28XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="C:\CCStudio_v3.3\C2000\cgtools\lib\rts2800_fpu32.lib"
+Source="C:\tidcs\c28\DSP2833x\v131\DSP2833x_common\source\DSP2833x_ADC_cal.asm"
+Source="C:\tidcs\c28\DSP2833x\v131\DSP2833x_common\source\DSP2833x_CodeStartBranch.asm"
+Source="C:\tidcs\c28\DSP2833x\v131\DSP2833x_common\source\DSP2833x_CpuTimers.c"
+Source="C:\tidcs\c28\DSP2833x\v131\DSP2833x_common\source\DSP2833x_DefaultIsr.c"
+Source="C:\tidcs\c28\DSP2833x\v131\DSP2833x_common\source\DSP2833x_PieCtrl.c"
+Source="C:\tidcs\c28\DSP2833x\v131\DSP2833x_common\source\DSP2833x_PieVect.c"
+Source="C:\tidcs\c28\DSP2833x\v131\DSP2833x_common\source\DSP2833x_SysCtrl.c"
+Source="C:\tidcs\c28\DSP2833x\v131\DSP2833x_common\source\DSP2833x_usDelay.asm"
+Source="C:\tidcs\c28\DSP2833x\v131\DSP2833x_headers\source\DSP2833x_GlobalVariableDefs.c"
+Source="init.c"
+Source="init.h"
+Source="Interrupt.c"
+Source="Interrupt.h"
+Source="main.c"
+Source="main.h"
+Source="type.h"
+Source="C:\tidcs\c28\DSP2833x\v131\DSP2833x_common\cmd\28335_RAM_lnk.cmd"
+Source="C:\tidcs\c28\DSP2833x\v131\DSP2833x_headers\cmd\DSP2833x_Headers_nonBIOS.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -pdsw225 -fr"$(Proj_dir)\Debug" -i"C:\tidcs\c28\DSP2833x\v131\DSP2833x_headers\include" -i"C:\tidcs\c28\DSP2833x\v131\DSP2833x_common\include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32
+
+["Compiler" Settings: "Release"]
+Options=-pdsw225 -o3 -fr"$(Proj_dir)\Release" -d"LARGE_MODEL" -ml -v28
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\test.map" -o".\Debug\test.out" -stack400 -w -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\test.map" -o".\Release\test.out" -w -x
+
+["init.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["init.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["Interrupt.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["Interrupt.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["main.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["main.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["type.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["type.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["C:\tidcs\c28\DSP2833x\v131\DSP2833x_common\cmd\28335_RAM_lnk.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["C:\tidcs\c28\DSP2833x\v131\DSP2833x_common\cmd\28335_RAM_lnk.cmd" Settings: "Release"]
+LinkOrder=1
+
+["C:\tidcs\c28\DSP2833x\v131\DSP2833x_headers\cmd\DSP2833x_Headers_nonBIOS.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["C:\tidcs\c28\DSP2833x\v131\DSP2833x_headers\cmd\DSP2833x_Headers_nonBIOS.cmd" Settings: "Release"]
+LinkOrder=1
+

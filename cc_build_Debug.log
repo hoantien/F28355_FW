@@ -1,0 +1,10 @@
+------------------------------  test.pjt - Debug  ------------------------------
+[init.c] "C:\Program Files\Texas Instruments\C2000 Code Generation Tools 5.2.1\bin\cl2000" -g -pdsw225 -fr"D:/Master/Luan_Van/F28355_FW/test/Debug" -i"C:/tidcs/c28/DSP2833x/v131/DSP2833x_headers/include" -i"C:/tidcs/c28/DSP2833x/v131/DSP2833x_common/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"Debug.lkf" "init.c"
+
+[main.c] "C:\Program Files\Texas Instruments\C2000 Code Generation Tools 5.2.1\bin\cl2000" -g -pdsw225 -fr"D:/Master/Luan_Van/F28355_FW/test/Debug" -i"C:/tidcs/c28/DSP2833x/v131/DSP2833x_headers/include" -i"C:/tidcs/c28/DSP2833x/v131/DSP2833x_common/include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32 -@"Debug.lkf" "main.c"
+
+[Linking...] "C:\Program Files\Texas Instruments\C2000 Code Generation Tools 5.2.1\bin\cl2000" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.
