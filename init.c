@@ -72,8 +72,6 @@ void Setup_ePWM1(void)
 	EPwm1Regs.ETSEL.bit.INTEN = 1;		// interrupt enable for ePWM1
 	EPwm1Regs.ETSEL.bit.INTSEL = 1;		
 	EPwm1Regs.ETPS.bit.INTPRD = 1;
-
-
 }
 
 void Setup_ePWM2(void)

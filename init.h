@@ -17,10 +17,10 @@
 
 /* Define mocro*/
 #define M				0.8
-#define A				3750		// Applitude of carrier 10Khz
+#define A				2500		// Applitude of carrier 15Khz
 #define B				A*(1+M)		// Applitude of sin reference
 #define PI				3.14159265
-#define Dx				0.2		//coefficient of short circuit
+#define Dx				0.2			//coefficient of short circuit
 #define Dy				2*Dx		//coefficient of short circuit
 #define short_dk_full	A-(Dx*A)
 #define short_dk_half	A-(Dy*A)
